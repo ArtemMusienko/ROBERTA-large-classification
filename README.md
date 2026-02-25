@@ -2,12 +2,14 @@
 
 # ROBERTA-large classification
 
-В данном коде используется **BERT-подобная** модель - `ai-forever/ruRoberta-large`, которая расположена на **[HuggingFace](https://huggingface.co/ai-forever/ruRoberta-large)**. 
+[![ru](https://img.shields.io/badge/README_на_русском-2A2C39?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)
 
-**BERT (Bidirectional Encoder Representations from Transformers)** — это мощная модель для обработки естественного языка (**NLP**), разработанная **Google**. Ключевая идея: в отличие от предыдущих моделей, которые анализировали текст только слева направо или справа налево, BERT обучается понимать контекст слова с двух сторон одновременно.
+This code uses a **BERT-like** model - `ai-forever/ruRoberta-large`, which is located on **[HuggingFace](https://huggingface.co/ai-forever/ruRoberta-large)**.
 
-Датасет `data-silence/rus_news_classifier`, который так же расположен на **[HuggingFace](https://huggingface.co/datasets/data-silence/rus_news_classifier)**. В коде проведена дополнительная обработка и фильтраций данных для представленного датасета. 
+**BERT (Bidirectional Encoder Representations from Transformers)** is a powerful natural language processing (**NLP**) model developed by **Google**. Key idea: Unlike previous models that only analyzed text from left to right or right to left, BERT is trained to understand the context of a word from both sides simultaneously.
 
-*Результаты обучения:*  **loss**: 0.0159 - **categorical_accuracy**: 0.9959 - **val_loss**: 0.0632 - **val_categorical_accuracy**: 0.9889
+The dataset is `data-silence/rus_news_classifier`, which is also located on **[HuggingFace](https://huggingface.co/datasets/data-silence/rus_news_classifier)**. The code includes additional data processing and filtering for the provided dataset.
 
-> Настоятельно рекомендую использовать **графический ускоритель T4** или мощнее!
+*Training results:*  **loss**: 0.0159 - **categorical_accuracy**: 0.9959 - **val_loss**: 0.0632 - **val_categorical_accuracy**: 0.9889
+
+> Highly recommend using a **T4 GPU** or more powerful!
